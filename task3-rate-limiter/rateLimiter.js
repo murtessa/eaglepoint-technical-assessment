@@ -195,7 +195,7 @@ function createRateLimiter() {
     return new RateLimiter(5, 60000);
 }
 
-// Export for use in other modules
+// Export for use in other modules that use the rateLimiter module 
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         RateLimiter,

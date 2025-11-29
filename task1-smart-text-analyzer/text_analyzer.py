@@ -11,7 +11,7 @@ This module provides a function to analyze text and return:
 
 def analyze_text(text):
     """
-    Analyzes text and returns comprehensive statistics.
+    Analyzes text and returns comprehensive statistics of the content of the text.
     
     Args:
         text (str): The input text to analyze

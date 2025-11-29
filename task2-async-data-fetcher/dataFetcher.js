@@ -161,7 +161,7 @@ async function fetchWithRetryMock(url, maxRetries = 3, successRate = 0.3) {
     throw new Error(`Failed to fetch data after ${maxRetries + 1} attempts. Last error: ${lastError.message}`);
 }
 
-// Export functions for use in other modules
+// Export functions for use in other modules that use the dataFetcher module 
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         fetchWithRetry,
